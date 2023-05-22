@@ -10,10 +10,10 @@
   <body>
     <div class="container">
       <div class="calculator">
-        <input type="text" id="output" readonly>
+        <input type="text" id="output">
         <div class="buttons">
           <button class="buttonspace" id="clear">AC</button>
-          <button class="operators" id="divide">/</button>
+          <button onclick="display('/')">/</button>
           <button id="backspace">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -31,21 +31,21 @@
               />
             </svg>
           </button>
-          <button onclick="display(7)">7</button>
-          <button onclick="display(8)">8</button>
-          <button onclick="display(9)">9</button>
-          <button class="operators" id="multiply">x</button>
-          <button onclick="display(4)">4</button>
-          <button onclick="display(5)">5</button>
-          <button onclick="display(6)">6</button>
-          <button class="operators" id="subtract">-</button>
-          <button onclick="display(1)">1</button>
-          <button onclick="display(2)">2</button>
-          <button onclick="display(3)">3</button>
-          <button class="operators" id="add">+</button>
-          <button onclick="display(0)">0</button>
+          <button class="numbers" onclick="display(7)">7</button>
+          <button class="numbers" onclick="display(8)">8</button>
+          <button class="numbers" onclick="display(9)">9</button>
+          <button onclick="display('*')">x</button>
+          <button class="numbers" onclick="display(4)">4</button>
+          <button class="numbers" onclick="display(5)">5</button>
+          <button class="numbers" onclick="display(6)">6</button>
+          <button onclick="display('-')">-</button>
+          <button class="numbers" onclick="display(1)">1</button>
+          <button class="numbers" onclick="display(2)">2</button>
+          <button class="numbers" onclick="display(3)">3</button>
+          <button onclick="display('+')">+</button>
+          <button class="numbers" onclick="display(0)">0</button>
           <button onclick="display('.')">.</button>
-          <button class="operators buttonspace" id="equal">=</button>
+          <button id="equal" class="buttonspace">=</button>
         </div>
       </div>
     </div>
