@@ -11,8 +11,9 @@ let checkerArray = [];
 function display(value) {
     if(value == '.' && checkerArray.includes('.')){
         return;
-    } else if(value == '+' || value == '-' || value == '*' || value == '/'){
-    } else {
+    } else if(value == '+' || value == '-' || value == '*' || value == '/'){ 
+    } 
+    else {
         screen.value += value;
         checkerArray.push(value);
     } 
@@ -80,12 +81,13 @@ equal.addEventListener('click', ()=> {
     screen.value = output.toFixed(2);
 })
 
-function clear() {
-    screen.value = "";
-}
 
 // Clear Button
 clears.addEventListener('click', ()=> {
-   clear(); 
+    clear(); 
 })
+function clear() {
+    checkerArray = [];
+    screen.value = "";
+}
 
