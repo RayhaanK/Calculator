@@ -60,7 +60,7 @@ document.querySelector('#divide')
 .addEventListener('click', (e)=>{
     let inputArray = screen.value.split('');
     console.log(inputArray)
-    if(inputArray[inputArray.length-1] === 'x'){
+    if(inputArray[inputArray.length-1] === '*'){
         return;
     } else {
         screen.value += e.target.innerHTML;
